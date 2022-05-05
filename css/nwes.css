@@ -1,0 +1,200 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* CSS Variables */
+
+ :root {
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar: language */
+
+.first-navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+.first-navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.first-navbar ul {
+    display: flex;
+}
+
+.first-navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline;
+}
+
+.first-navbar::before {
+    content: "";
+    background-color: #ada3a3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.7;
+}
+
+.H-title::before {
+    background-color: white;
+}
+
+.H-title {
+    justify-content: center;
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+}
+
+.first-div {
+    background: #e84eaa;
+    text-align: center;
+    padding: 8px 318px;
+}
+
+.first-div ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.Filter {
+    position: sticky;
+}
+
+.Filter::before {
+    background-color: #000000;
+}
+
+.Filter ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 9px 5px 0;
+    color: rgb(255 255 255);
+}
+
+.Filter ul {
+    position: relative;
+}
+
+.first-div li a strong {
+    display: none;
+    z-index: 999999;
+    background: #414141;
+    height: 22px;
+    font-size: 11px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: absolute;
+    top: 30px;
+    left: -6px;
+}
+
+.first-div li a strong :hover {
+    visibility: visible;
+}
+
+
+/* home section */
+
+
+/* #home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+} */
+
+
+/* Services Section */
+
+#news-container {
+    padding: 29px 143px;
+    display: flex;
+}
+
+#news-container .paper {
+    display: flex;
+    justify-content: space-between;
+    background: #f3f3f3;
+    padding: 9px 7px 10px 10px;
+    margin-top: 5px;
+    border-bottom: 5px solid red;
+}
+
+.paper .head-picture {
+    padding: 21px 25px;
+    margin: 0px 38px;
+}
+
+.paper.head-picture img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+.paper .head-picture p {
+    color: #444;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px 0 0;
+    font-family: 'Bree Serif', serif;
+}
+
+#news-container .paper .archives .h-primary {
+    border-bottom: 1px solid #dbdbdb;
+    clear: both;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding: 5px 0;
+    position: relative;
+}
