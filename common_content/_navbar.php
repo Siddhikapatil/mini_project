@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <title>ePaper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -529,10 +529,10 @@ h3 a {
     </div>
     </div>
     <span>
-        <nav class="first-navbar H-title">
-            <!-- <div id="logo">
+        <!-- <nav class="first-navbar H-title">
+             <div id="logo">
                     <img src="../img/logo.jpg" alt="MyIndia.com">
-                </div> -->
+                 </div> 
             <div>
                 <center>
                     <h1>The Daily Hub</h1>
@@ -542,7 +542,7 @@ h3 a {
 
 
                 <div class="follow-icon">
-                    <!-- <h3>Follow us on :</h3> -->
+                    <h3>Follow us on :</h3> 
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -554,7 +554,7 @@ h3 a {
     </span>
     <div class="T-date">
         <span class="date-update">Tue,8 Feb</span>
-    </div>
-</body>
+    </div> -->
+</body> 
 
 </html>

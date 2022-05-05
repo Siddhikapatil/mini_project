@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
 
         echo '<script>alert("user alredy exits")</script>';
-        echo '<script>window.location.href="html\index.php"</script>';
+        echo '<script>window.location.href="\html\index.php"</script>';
     }
     // }
     if (isset($_POST['submit'])) {
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $sql = mysqli_query($conn, "select * from `daily_hub_login` where email='$email' and 	Password='$cpassword'");
             $num_rows = ($sql);
             if ($num_rows == 1) {
-                echo '<script>window.location.href="html\index.php"</script>';
+                echo '<script>window.location.href="html/index.php"</script>';
                 echo '<script>alert("Succefully login")</script>';
             } else {
 
@@ -64,13 +64,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
                 <button type='button' onclick='register()' class='toggle-btn'>Register</button>
             </div>
-            <form id='login' class='input-group-login'>
+            <form id='login' method="POST" class='input-group-login'>
                 <input type='text' class='input-field' placeholder='Email Id' required name="email" id="email">
                 <input type='password' class='input-field' placeholder='Enter Password' required name="pass">
                 <input type='checkbox' class='check-box'><span>Remember Password</span>
                 <button type='submit' class='submit-btn' name="submit">Log in</button>
             </form>
-            <form id='register' class='input-group-register'>
+            <form id='register' method="POST" class='input-group-register'>
                 <input type='text' class='input-field' placeholder='First Name' required name="first_name">
                 <input type='text' class='input-field' placeholder='Last Name ' required name="last_name">
                 <input type='email' class='input-field' placeholder='Email Id' required name="email">
