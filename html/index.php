@@ -77,7 +77,7 @@
             <div class="l-div f-wrapper">
                 <ul>
                     <li>
-                        <a href="../php/login.html">
+                        <a href="../login.php">
                             <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
                         </a>
 
@@ -187,6 +187,24 @@
                     </a>
                     </span>
                 </h2>
+                <div class="Lnews-content">
+                    <div class="content-holder">
+                        <div class="row-news">
+                            <h3 class="first-Nheading">
+                                <a href="#news">"India's historic win at gabba: India won by 3 wickets at gabba."
+                                    "</a>
+                            </h3>
+                        </div>
+
+                        <figure>
+                            <span>
+                                <a href="#gabba">
+                                    <img src="../img/gaba_win.png" alt="">
+                                </a>
+                            </span>
+                        </figure>
+                    </div>
+                </div>
                 <div class="Lnews-content">
                     <div class="content-holder">
                         <div class="row-news">
